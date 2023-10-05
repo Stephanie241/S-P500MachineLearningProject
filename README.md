@@ -6,19 +6,19 @@ This Python script performs regression analysis on the weekly adjusted stock pri
 ## Project Structure
 The project consists of the following components:
 
-### Main Python Script (`sp500_financial_regression.py`):
+### Main Python Script
 - This is the main script that orchestrates the data collection, analysis, and visualization.
 - It imports necessary libraries such as pandas, requests, matplotlib, and sklearn for data manipulation, web scraping, visualization, and regression analysis.
 - The script is divided into several sections, each serving a specific purpose.
 
-### Web Scraping (`get_symbols` and `GetWeeklyAdjustedPrice` functions):
+### Web Scraping
 - The `get_symbols` function scrapes the list of S&P 500 companies from Wikipedia based on optional filter criteria such as GICS Sector.
 - The `GetWeeklyAdjustedPrice` function retrieves the weekly adjusted stock price data for a given company symbol from Alpha Vantage.
 
-### Data Visualization (`PriceTimeSeries` function):
+### Data Visualization
 - The `PriceTimeSeries` function visualizes the weekly stock price time series for a selected target variable (e.g., 'High') of a specific company.
 
-### Regression Analysis (`perform_regression` function):
+### Regression Analysis
 - The `perform_regression` function performs regression analysis on the stock price data.
 - It supports three types of regression models: Linear Regression, K-Nearest Neighbors (KNN) Regression, and Support Vector Regression (SVR).
 - The function calculates evaluation metrics (MSE, MAE, R2) and visualizes the observed vs. predicted values.
@@ -29,7 +29,7 @@ To use this script and perform regression analysis on the weekly stock price dat
 
 1. Make sure you have the required Python libraries installed. You can install them using `pip`:
 
-pip install pandas requests matplotlib scikit-learn
+'pip install pandas requests matplotlib scikit-learn'
 
 2. Run the `sp500_financial_regression.py` script in your Python environment.
 
