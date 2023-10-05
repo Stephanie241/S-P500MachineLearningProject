@@ -3,6 +3,7 @@
 ## Overview
 This Python script performs regression analysis on the weekly adjusted stock price data of the top 5 S&P 500 financial companies. It uses historical stock price data obtained from Alpha Vantage via API requests and provides regression analysis results such as Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared (R2) for a given target variable (e.g., 'Open', 'Close', 'Low').
 
+### Visualisation of Machine Learning Pipeline
 ![Screenshot 2023-10-05 12](https://github.com/Stephanie241/S-P500MachineLearningProject/assets/144491602/51308e59-4f83-463f-ad24-f8d315b98eff)
 
 ## Project Structure
