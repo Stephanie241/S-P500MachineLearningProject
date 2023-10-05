@@ -13,21 +13,21 @@ This Python script performs regression analysis on the weekly adjusted stock pri
 The project consists of the following components:
 
 ### Main Python Script
-- This is the main script that orchestrates the data collection, analysis, and visualization.
-- It imports necessary libraries such as pandas, requests, matplotlib, and sklearn for data manipulation, web scraping, visualization, and regression analysis.
+- This is the main script that orchestrates the data collection, analysis, and visualisation.
+- It imports necessary libraries such as pandas, requests, matplotlib, and sklearn for data manipulation, web scraping, visualisation, and regression analysis.
 - The script is divided into several sections, each serving a specific purpose.
 
 ### Web Scraping
 - The `get_symbols` function scrapes the list of S&P 500 companies from Wikipedia based on optional filter criteria such as GICS Sector.
 - The `GetWeeklyAdjustedPrice` function retrieves the weekly adjusted stock price data for a given company symbol from Alpha Vantage.
 
-### Data Visualization
-- The `PriceTimeSeries` function visualizes the weekly stock price time series for a selected target variable (e.g., 'High') of a specific company.
+### Data Visualisation
+- The `PriceTimeSeries` function visualises the weekly stock price time series for a selected target variable (e.g., 'High') of a specific company.
 
 ### Regression Analysis
 - The `perform_regression` function performs regression analysis on the stock price data.
 - It supports three types of regression models: Linear Regression, K-Nearest Neighbors (KNN) Regression, and Support Vector Regression (SVR).
-- The function calculates evaluation metrics (MSE, MAE, R2) and visualizes the observed vs. predicted values.
+- The function calculates evaluation metrics (MSE, MAE, R2) and visualises the observed vs. predicted values.
 - It also provides predictions for the selected target variable at a specified future time point.
 
 ## Usage
@@ -42,18 +42,11 @@ To use this script and perform regression analysis on the weekly stock price dat
 3. The script will:
 - Scrape the top 5 S&P 500 financial companies.
 - Retrieve weekly adjusted stock price data for each of these companies from Alpha Vantage.
-- Visualize the stock price time series for a selected target variable.
+- Visualise the stock price time series for a selected target variable.
 - Perform regression analysis on the data, allowing you to choose the regression model type (linear, KNN, or SVR).
 - Display evaluation metrics and predictions for a future time point.
 
 4. You can customize the target variable, model type, and other parameters within the script to analyze different aspects of the data.
-
-## Error Warnings
-While running the script, you may encounter some error warnings. Here's an explanation of those warnings:
-
-- **UserWarning: X does not have valid feature names:** You may encounter this warning when fitting a regression model. This warning indicates that the model was fitted with feature names that are not valid or missing. It is generally safe to ignore this warning, as the model can still perform regression using the provided numeric features.
-
-- **FutureWarning: Passing literal HTML to 'read_html' is deprecated:** This warning occurs when parsing HTML content directly using `pd.read_html`. It suggests that passing HTML as a string directly to `pd.read_html` may be deprecated in future versions of Pandas. However, it should not affect the functionality of the script, and you can continue to use it as is.
 
 ## Dependencies
 - Python 3.x
