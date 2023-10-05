@@ -6,6 +6,9 @@ This Python script performs regression analysis on the weekly adjusted stock pri
 ### Visualisation of Machine Learning Pipeline:
 ![Screenshot 2023-10-05 12](https://github.com/Stephanie241/S-P500MachineLearningProject/assets/144491602/51308e59-4f83-463f-ad24-f8d315b98eff)
 
+### Examples of regression models produced for different companies over time against varying price metrics: 
+![Screenshot 2023-10-05 130418](https://github.com/Stephanie241/S-P500MachineLearningProject/assets/144491602/6e06d4d4-ad03-4a71-9e90-693a03507075)
+
 ## Project Structure
 The project consists of the following components:
 
