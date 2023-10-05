@@ -29,7 +29,7 @@ To use this script and perform regression analysis on the weekly stock price dat
 
 1. Make sure you have the required Python libraries installed. You can install them using `pip`:
 
-`pip install pandas requests matplotlib scikit-learn`
+  `pip install pandas requests matplotlib scikit-learn`
 
 2. Run the `sp500_financial_regression.py` script in your Python environment.
 
